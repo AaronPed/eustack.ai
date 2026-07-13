@@ -13,43 +13,43 @@ const team = [
   {
     name: 'Lukas Weber',
     role: 'Chief Executive Officer',
-    image: '/images/team-ceo.jpg',
+    image: 'images/team-ceo.jpg',
     bio: 'Former McKinsey digital, ETH Zurich CS. Leading Eurostack\'s mission for European AI sovereignty.',
   },
   {
     name: 'Marc Hoffmann',
     role: 'Chief Technology Officer',
-    image: '/images/team-cto.jpg',
+    image: 'images/team-cto.jpg',
     bio: 'Ex-Google DeepMind, EPFL ML PhD. Architect of Eurostack\'s inference platform.',
   },
   {
     name: 'Felix Bauer',
     role: 'Chief Operating Officer',
-    image: '/images/team-coo.jpg',
+    image: 'images/team-coo.jpg',
     bio: 'Former AWS enterprise, HSG St. Gallen MBA. Scaling European infrastructure operations.',
   },
   {
     name: 'Jonas Keller',
     role: 'Senior Platform Engineer',
-    image: '/images/team-eng1.jpg',
+    image: 'images/team-eng1.jpg',
     bio: 'Distributed systems specialist. Building the low-latency inference engine.',
   },
   {
     name: 'David Mueller',
     role: 'ML Infrastructure Engineer',
-    image: '/images/team-eng2.jpg',
+    image: 'images/team-eng2.jpg',
     bio: 'GPU kernel optimization and model serving at scale.',
   },
   {
     name: 'Anna Schmidt',
     role: 'Sales & Operations',
-    image: '/images/team-sales.jpg',
+    image: 'images/team-sales.jpg',
     bio: 'Enterprise SaaS sales. Connecting European organizations with sovereign AI.',
   },
   {
     name: 'Tobias Gerber',
     role: 'Field Deployment Engineer',
-    image: '/images/team-fde.jpg',
+    image: 'images/team-fde.jpg',
     bio: 'On-premise infrastructure deployment. NATO SECRET cleared.',
   },
 ];
@@ -160,7 +160,7 @@ export default function AboutPage() {
 
           <div className="relative">
             <img
-              src="/images/datacenter.jpg"
+              src="images/datacenter.jpg"
               alt="Eurostack Datacenter"
               className="w-full h-full object-cover border border-slate-euro/20"
               style={{ minHeight: '400px' }}

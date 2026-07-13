@@ -7,7 +7,7 @@ export default function GlobalExecution() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="/images/hyperloop.jpg"
+          src="images/hyperloop.jpg"
           alt="European infrastructure"
           className="w-full h-full object-cover"
         />

@@ -111,7 +111,7 @@ export default function ServicesPage() {
                 <div
                   className="relative aspect-video overflow-hidden border border-slate-euro/20"
                   style={{
-                    backgroundImage: `url(/images/${
+                    backgroundImage: `url(images/${
                       service.id === 'api'
                         ? 'fiber-optics'
                         : service.id === 'private-cloud'

@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 const models = [
   {
     name: 'GLM-5.2',
-    image: '/images/fiber-optics.jpg',
+    image: 'images/fiber-optics.jpg',
     params: '744B Total / 40B Active',
     latency: '48ms',
     description:
@@ -16,7 +16,7 @@ const models = [
   },
   {
     name: 'DeepSeek V4 Pro',
-    image: '/images/prism.jpg',
+    image: 'images/prism.jpg',
     params: '1.6T Total / 49B Active',
     latency: '78ms',
     description:
@@ -25,7 +25,7 @@ const models = [
   },
   {
     name: 'DeepSeek V4 Flash',
-    image: '/images/hyperloop.jpg',
+    image: 'images/hyperloop.jpg',
     params: '284B Total / 13B Active',
     latency: '28ms',
     description:
@@ -34,7 +34,7 @@ const models = [
   },
   {
     name: 'Mistral Large 3',
-    image: '/images/datacenter.jpg',
+    image: 'images/datacenter.jpg',
     params: '675B Total / 41B Active',
     latency: '42ms',
     description:
@@ -43,7 +43,7 @@ const models = [
   },
   {
     name: 'Llama 4 Scout',
-    image: '/images/fiber-optics.jpg',
+    image: 'images/fiber-optics.jpg',
     params: '109B Total / 17B Active',
     latency: '35ms',
     description:
