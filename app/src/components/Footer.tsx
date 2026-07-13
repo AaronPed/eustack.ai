@@ -109,7 +109,7 @@ export default function Footer() {
 
         <div className="mt-20 pt-8 border-t border-slate-euro/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <p className="font-mono text-xs text-slate-euro">
-            &copy; {new Date().getFullYear()} Eurostack AI AG. All rights reserved.
+            &copy; {new Date().getFullYear()} Eustack AI AG. All rights reserved.
           </p>
           <p className="font-mono text-xs text-slate-euro/60">
             Sovereign European Infrastructure. Free from the Cloud Act.

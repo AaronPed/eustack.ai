@@ -1,4 +1,4 @@
-# Eurostack Technical Specification
+# Eustack Technical Specification
 
 ## Dependencies
 

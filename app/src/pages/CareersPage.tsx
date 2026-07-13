@@ -49,7 +49,7 @@ const openings = [
     location: 'Zurich, Switzerland',
     type: 'Full-time',
     description:
-      'Design, deploy, and operate on-premise LLM infrastructure at customer sites across Europe. From rack installation to model serving — you are the technical face of Eurostack in the field.',
+      'Design, deploy, and operate on-premise LLM infrastructure at customer sites across Europe. From rack installation to model serving — you are the technical face of Eustack in the field.',
     requirements: [
       '3+ years in infrastructure or DevOps engineering',
       'Deep experience with Kubernetes, Docker, and GPU clusters',

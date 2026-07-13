@@ -53,7 +53,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between section-padding h-16">
           <Link to="/" className="flex items-center gap-2">
             <span className="font-serif text-xl font-medium text-ice tracking-wide">
-              eurostack<span className="text-alert">.</span>ai
+              eustack<span className="text-alert">.</span>ai
             </span>
           </Link>
 

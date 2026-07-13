@@ -216,7 +216,7 @@ export default function PricingPage() {
       <section className="section-padding pb-20 lg:pb-32">
         <div className="border border-slate-euro/20 p-8 lg:p-12 bg-navy-50/30">
           <h3 className="font-serif text-2xl text-ice uppercase tracking-wide mb-4">
-            Why Eurostack Pricing?
+            Why Eustack Pricing?
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>

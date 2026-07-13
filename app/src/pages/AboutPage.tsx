@@ -14,13 +14,13 @@ const team = [
     name: 'Lukas Weber',
     role: 'Chief Executive Officer',
     image: 'images/team-ceo.jpg',
-    bio: 'Former McKinsey digital, ETH Zurich CS. Leading Eurostack\'s mission for European AI sovereignty.',
+    bio: 'Former McKinsey digital, ETH Zurich CS. Leading Eustack\'s mission for European AI sovereignty.',
   },
   {
     name: 'Marc Hoffmann',
     role: 'Chief Technology Officer',
     image: 'images/team-cto.jpg',
-    bio: 'Ex-Google DeepMind, EPFL ML PhD. Architect of Eurostack\'s inference platform.',
+    bio: 'Ex-Google DeepMind, EPFL ML PhD. Architect of Eustack\'s inference platform.',
   },
   {
     name: 'Felix Bauer',
@@ -67,7 +67,7 @@ export default function AboutPage() {
         </h1>
         <div className="max-w-3xl">
           <p className="text-slate-euro text-lg leading-relaxed mb-6">
-            Eurostack was founded on a single conviction: European organizations deserve access to
+            Eustack was founded on a single conviction: European organizations deserve access to
             the best open-source AI models without compromising their sovereignty. In a world where
             AI infrastructure is overwhelmingly controlled by US hyperscalers — subject to the Cloud Act,
             FISA, and other extraterritorial regulations — we offer a different path.
@@ -126,7 +126,7 @@ export default function AboutPage() {
               Our Principles
             </p>
             <h2 className="font-serif text-3xl md:text-4xl text-ice uppercase tracking-wide mb-8">
-              WHY EUROSTACK?
+              WHY EUSTACK?
             </h2>
 
             <div className="space-y-8">
@@ -161,7 +161,7 @@ export default function AboutPage() {
           <div className="relative">
             <img
               src="images/datacenter.jpg"
-              alt="Eurostack Datacenter"
+              alt="Eustack Datacenter"
               className="w-full h-full object-cover border border-slate-euro/20"
               style={{ minHeight: '400px' }}
             />

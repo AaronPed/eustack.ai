@@ -6,21 +6,21 @@ const docSections = [
   {
     id: 'auth',
     title: 'Authentication',
-    content: `All API requests require an API key passed in the Authorization header.\n\n## API Key\n\nYour API key can be generated from the Eurostack dashboard. Include it in every request:\n\n    curl https://api.eurostack.ai/v1/models \\
-      -H "Authorization: Bearer YOUR_API_KEY"\n\n## Base URL\n\n    https://api.eurostack.ai/v1\n\nAll endpoints are served over HTTPS. Unencrypted HTTP requests are rejected.`,
+    content: `All API requests require an API key passed in the Authorization header.\n\n## API Key\n\nYour API key can be generated from the Eustack dashboard. Include it in every request:\n\n    curl https://api.eustack.ai/v1/models \\
+      -H "Authorization: Bearer YOUR_API_KEY"\n\n## Base URL\n\n    https://api.eustack.ai/v1\n\nAll endpoints are served over HTTPS. Unencrypted HTTP requests are rejected.`,
   },
   {
     id: 'models',
     title: 'List Models',
     endpoint: 'GET /models',
-    content: `Retrieve a list of available models for inference.\n\n    curl https://api.eurostack.ai/v1/models \\
+    content: `Retrieve a list of available models for inference.\n\n    curl https://api.eustack.ai/v1/models \\
       -H "Authorization: Bearer YOUR_API_KEY"\n\n## Response\n\n    {\n      "object": "list",\n      "data": [\n        {\n          "id": "glm-5.2",\n          "object": "model",\n          "created": 1750000000,\n          "owned_by": "z.ai"\n        },\n        {\n          "id": "deepseek-v4-pro",\n          "object": "model",\n          "created": 1750000000,\n          "owned_by": "deepseek-ai"\n        },\n        {\n          "id": "deepseek-v4-flash",\n          "object": "model",\n          "created": 1750000000,\n          "owned_by": "deepseek-ai"\n        },\n        {\n          "id": "mistral-large-3",\n          "object": "model",\n          "created": 1733100000,\n          "owned_by": "mistralai"\n        },\n        {\n          "id": "llama-4-scout",\n          "object": "model",\n          "created": 1744000000,\n          "owned_by": "meta"\n        }\n      ]\n    }`,
   },
   {
     id: 'completions',
     title: 'Chat Completions',
     endpoint: 'POST /chat/completions',
-    content: `Generate a chat completion from a conversation.\n\n    curl https://api.eurostack.ai/v1/chat/completions \\
+    content: `Generate a chat completion from a conversation.\n\n    curl https://api.eustack.ai/v1/chat/completions \\
       -H "Authorization: Bearer YOUR_API_KEY" \\
       -H "Content-Type: application/json" \\
       -d '{\n        "model": "deepseek-v4-pro",\n        "messages": [\n          {"role": "system", "content": "You are a helpful assistant."},\n          {"role": "user", "content": "Hello!"}\n        ],\n        "temperature": 0.7,\n        "max_tokens": 256\n      }'\n\n## Request Body\n\n| Parameter | Type | Required | Description |\n|-----------|------|----------|-------------|\n| model | string | Yes | Model ID (e.g., deepseek-v4-pro) |\n| messages | array | Yes | Array of message objects |\n| temperature | float | No | Sampling temperature (0-2, default 1) |\n| max_tokens | integer | No | Maximum tokens to generate |\n| top_p | float | No | Nucleus sampling parameter |\n| stream | boolean | No | Stream response tokens |\n\n## Response\n\n    {\n      "id": "chatcmpl-abc123",\n      "object": "chat.completion",\n      "created": 1700000000,\n      "model": "deepseek-v4-pro",\n      "choices": [\n        {\n          "index": 0,\n          "message": {\n            "role": "assistant",\n            "content": "Hello! How can I assist you today?"\n          },\n          "finish_reason": "stop"\n        }\n      ],\n      "usage": {\n        "prompt_tokens": 25,\n        "completion_tokens": 15,\n        "total_tokens": 40\n      }\n    }`,
@@ -29,7 +29,7 @@ const docSections = [
     id: 'embeddings',
     title: 'Embeddings',
     endpoint: 'POST /embeddings',
-    content: `Generate vector embeddings for text input.\n\n    curl https://api.eurostack.ai/v1/embeddings \\
+    content: `Generate vector embeddings for text input.\n\n    curl https://api.eustack.ai/v1/embeddings \\
       -H "Authorization: Bearer YOUR_API_KEY" \\
       -H "Content-Type: application/json" \\
       -d '{\n        "model": "mistral-embed",\n        "input": "The quick brown fox"\n      }'\n\n## Request Body\n\n| Parameter | Type | Required | Description |\n|-----------|------|----------|-------------|\n| model | string | Yes | Embedding model ID |\n| input | string/array | Yes | Text to embed |\n\n## Response\n\n    {\n      "object": "list",\n      "data": [\n        {\n          "object": "embedding",\n          "embedding": [0.0023064255, -0.009327292],\n          "index": 0\n        }\n      ],\n      "model": "mistral-embed",\n      "usage": {\n        "prompt_tokens": 8,\n        "total_tokens": 8\n      }\n    }`,
@@ -37,7 +37,7 @@ const docSections = [
   {
     id: 'streaming',
     title: 'Streaming',
-    content: `Enable streaming by setting stream: true in your chat completion request.\n\n    curl https://api.eurostack.ai/v1/chat/completions \\
+    content: `Enable streaming by setting stream: true in your chat completion request.\n\n    curl https://api.eustack.ai/v1/chat/completions \\
       -H "Authorization: Bearer YOUR_API_KEY" \\
       -H "Content-Type: application/json" \\
       -d '{\n        "model": "deepseek-v4-pro",\n        "messages": [{"role": "user", "content": "Say hello"}],\n        "stream": true\n      }'\n\nThe server will return SSE (Server-Sent Events) with partial message deltas:\n\n    data: {"id":"...","object":"chat.completion.chunk","choices":[{"delta":{"content":"Hello"}}]}\n\n    data: {"id":"...","object":"chat.completion.chunk","choices":[{"delta":{"content":"!"}}]}\n\n    data: [DONE]`,

@@ -17,7 +17,7 @@ export default function Waitlist({ title, eyebrow = 'API Access' }: WaitlistProp
           {title}
         </h1>
         <p className="text-slate-euro text-lg max-w-2xl leading-relaxed">
-          Join the waitlist for the Eurostack inference platform. We are selecting early partners
+          Join the waitlist for the Eustack inference platform. We are selecting early partners
           for our private beta programme.
         </p>
       </section>
@@ -41,14 +41,14 @@ export default function Waitlist({ title, eyebrow = 'API Access' }: WaitlistProp
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="mailto:contact@eurostack.ai?subject=Private%20Beta%20Waitlist%20Application"
+                href="mailto:contact@eustack.ai?subject=Private%20Beta%20Waitlist%20Application"
                 className="btn-primary inline-flex items-center gap-2"
               >
                 <Mail size={16} />
                 APPLY FOR EARLY ACCESS
               </a>
               <a
-                href="mailto:contact@eurostack.ai?subject=Waitlist%20Question"
+                href="mailto:contact@eustack.ai?subject=Waitlist%20Question"
                 className="border border-slate-euro/40 text-slate-euro px-8 py-3 font-mono text-sm tracking-widest uppercase transition-all duration-300 hover:border-ice hover:text-ice inline-flex items-center gap-2"
               >
                 ASK A QUESTION
@@ -131,27 +131,27 @@ export default function Waitlist({ title, eyebrow = 'API Access' }: WaitlistProp
           </h2>
           <p className="text-slate-euro max-w-xl mx-auto mb-4">
             Send your request to{' '}
-            <a href="mailto:contact@eurostack.ai" className="text-alert hover:underline">
-              contact@eurostack.ai
+            <a href="mailto:contact@eustack.ai" className="text-alert hover:underline">
+              contact@eustack.ai
             </a>{' '}
             with your organization details and expected workload. Our team will be in touch
             as we expand the beta cohort.
           </p>
           <p className="text-slate-euro/60 text-sm max-w-xl mx-auto mb-8">
-            The Eurostack inference platform is currently in development. By submitting your
+            The Eustack inference platform is currently in development. By submitting your
             information, you are joining a waitlist for early access. No payment or binding
             commitment is required.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:contact@eurostack.ai?subject=Private%20Beta%20Waitlist%20Application"
+              href="mailto:contact@eustack.ai?subject=Private%20Beta%20Waitlist%20Application"
               className="btn-primary inline-flex items-center gap-2 justify-center"
             >
               <Mail size={16} />
               APPLY FOR EARLY ACCESS
             </a>
             <a
-              href="mailto:contact@eurostack.ai?subject=Waitlist%20Question"
+              href="mailto:contact@eustack.ai?subject=Waitlist%20Question"
               className="border border-slate-euro/40 text-slate-euro px-8 py-3 font-mono text-sm tracking-widest uppercase transition-all duration-300 hover:border-ice hover:text-ice inline-flex items-center gap-2 justify-center"
             >
               CONTACT US
