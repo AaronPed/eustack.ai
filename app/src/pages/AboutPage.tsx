@@ -74,7 +74,7 @@ export default function AboutPage() {
           </p>
           <p className="text-slate-euro text-lg leading-relaxed mb-6">
             We are building infrastructure to host the latest open-source models — GLM, DeepSeek,
-            Mistral, Llama — exclusively in European datacenters across Switzerland, Germany, and
+            Mistral, Qwen — exclusively in European datacenters across Switzerland, Germany, and
             France. Our infrastructure is being designed for ISO 27001 and SOC 2 compliance, with
             the security frameworks needed to handle sensitive workloads in defence, government,
             and critical infrastructure.
@@ -137,7 +137,7 @@ export default function AboutPage() {
                 },
                 {
                   title: 'Best Open Models',
-                  text: 'We will continuously evaluate and deploy the latest open-source models — GLM, DeepSeek, Mistral, Llama — so you always have access to cutting-edge performance.',
+                  text: 'We will continuously evaluate and deploy the latest open-source models — GLM, DeepSeek, Mistral, Qwen — so you always have access to cutting-edge performance.',
                 },
                 {
                   title: 'Competitive Pricing',

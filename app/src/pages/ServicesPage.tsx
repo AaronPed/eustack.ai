@@ -8,7 +8,7 @@ const services = [
     title: 'GENERIC LLM API',
     subtitle: 'RESTful Inference at Scale',
     description:
-      'Production-grade API access to the best open-source models — GLM, DeepSeek, Mistral, Llama — hosted exclusively on European infrastructure. Drop-in OpenAI-compatible endpoints. Targeting sub-50ms latency from Zurich, Frankfurt, and Paris.',
+      'Production-grade API access to the best open-source models — GLM, DeepSeek, Mistral, Qwen — hosted exclusively on European infrastructure. Drop-in OpenAI-compatible endpoints. Targeting sub-50ms latency from Zurich, Frankfurt, and Paris.',
     features: [
       'OpenAI-compatible REST API',
       'Streaming & batch inference',

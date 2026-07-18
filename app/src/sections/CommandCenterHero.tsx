@@ -15,7 +15,7 @@ export default function CommandCenterHero() {
         </h1>
 
         <p className="mt-8 font-mono text-slate-euro text-sm md:text-base tracking-widest uppercase text-center max-w-2xl">
-          GLM-5.2, DeepSeek V4, Mistral Large 3, Llama 4 Scout. European datacenters. Free from the Cloud Act.
+          GLM-5.2, DeepSeek V4, Mistral Large 3, Qwen3-VL. European datacenters. Free from the Cloud Act.
         </p>
 
         <div className="mt-12 flex flex-col sm:flex-row gap-4">

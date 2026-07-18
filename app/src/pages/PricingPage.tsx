@@ -79,7 +79,7 @@ const modelPricing = [
   { model: 'DeepSeek V4 Pro', input: '$0.004', output: '$0.009', context: '1M' },
   { model: 'DeepSeek V4 Flash', input: '$0.001', output: '$0.003', context: '1M' },
   { model: 'Mistral Large 3', input: '$0.003', output: '$0.008', context: '256K' },
-  { model: 'Llama 4 Scout', input: '$0.002', output: '$0.004', context: '10M' },
+  { model: 'Qwen3-VL', input: '$0.002', output: '$0.004', context: '256K' },
 ];
 
 export default function PricingPage() {
